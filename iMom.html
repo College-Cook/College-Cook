@@ -1,0 +1,103 @@
+
+<html>
+
+<h1 style="font-family:garamond; font-size:300%;">    Cooking For College</h1>
+<style>
+body {font-family: "amatic-sc", amatic-sc;}
+
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+ul.tab li {float: left;}
+
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+ul.tab li a:hover {
+    background-color: #ddd;
+}
+
+ul.tab li a:focus, .active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+</style>
+<body>
+
+<ul class="tab">
+  <li><a href="#" class="tablinks" onclick="openPlan(event, 'Statistics')">Statistics</a></li>
+  <li><a href="#" class="tablinks" onclick="openPlan(event, 'Breakfast')">Breakfast</a></li>
+  <li><a href="#" class="tablinks" onclick="openPlan(event, 'Lunch')">Lunch</a></li>
+  <li><a href="#" class="tablinks" onclick="openPlan(event, 'Dinner')">Dinner</a></li>  
+  <li><a href="#" class="tablinks" onclick="openPlan(event, 'Week')">Week</a></li>
+  <li><a href="#" class="tablinks" onclick="openPlan(event, 'Hacks')">Hacks</a></li>
+</ul>
+
+<div id="Statistics" class="tabcontent">
+  <h3>Statistics</h3>
+  <p>
+    <img src="http://sustainontario.com/wp2011/wp-content/uploads/2011/01/Ellis_Jennifer_College-Student.jpg" alt="image can't be viewed" style="width:1200px;height:1000px;">
+  </p>
+</div>
+
+<div id="Breakfast" class="tabcontent">
+  <h3>Breakfast</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Lunch" class="tabcontent">
+  <h3>Lunch</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<div id="Dinner" class="tabcontent">
+  <h3>Dinner</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<div id="Week" class="tabcontent">
+  <h3>Week</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<div id="Hacks" class="tabcontent">
+  <h3>Hacks</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<script>
+function openPlan(evt, mealName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tabcontent.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(mealName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+     
+</body>
+</html> 

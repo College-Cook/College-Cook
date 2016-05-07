@@ -1,103 +1,216 @@
 
 <html>
 
-<h1 style="font-family:garamond; font-size:300%;">    Cooking For College</h1>
-<style>
-body {font-family: "amatic-sc", amatic-sc;}
+
+<head>
+<style> 
+@font-face {
+   font-family: Amatic;
+   src:url(http://fonts.gstatic.com/s/amaticsc/v6/DPPfSFKxRTXvae2bKDzp5FtXRa8TVwTICgirnJhmVJw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/amaticsc/v6/DPPfSFKxRTXvae2bKDzp5D8E0i7KZn-EPnyo3HZu7kw.woff);
+}
+
+div {
+   font-family: Amatic;
+}
 
 ul.tab {
+
     list-style-type: none;
+
     margin: 0;
+
     padding: 0;
+
     overflow: hidden;
+
     border: 1px solid #ccc;
+
     background-color: #f1f1f1;
+
 }
+
+
 
 ul.tab li {float: left;}
 
 ul.tab li a {
+
     display: inline-block;
+
     color: black;
+
     text-align: center;
+
     padding: 14px 16px;
+
     text-decoration: none;
+
     transition: 0.3s;
+
     font-size: 17px;
+
 }
+
 ul.tab li a:hover {
+
     background-color: #ddd;
+
 }
+
 
 ul.tab li a:focus, .active {
+
     background-color: #ccc;
+
 }
+
+
 
 .tabcontent {
+
     display: none;
+
     padding: 6px 12px;
+
     border: 1px solid #ccc;
+
     border-top: none;
+
 }
+
+
+div#fixedheader {
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	color:#CCC;
+	background:#333;
+	padding:20px;
+
 </style>
+</head>
+
 <body>
 
+
+<div id="fixedheader">Top div content</div>
+<div>
+<h1 style="font-size:250%;">    Cooking For College</h1>
+
+
 <ul class="tab">
+
   <li><a href="#" class="tablinks" onclick="openPlan(event, 'Statistics')">Statistics</a></li>
+
   <li><a href="#" class="tablinks" onclick="openPlan(event, 'Breakfast')">Breakfast</a></li>
+
   <li><a href="#" class="tablinks" onclick="openPlan(event, 'Lunch')">Lunch</a></li>
-  <li><a href="#" class="tablinks" onclick="openPlan(event, 'Dinner')">Dinner</a></li>  
-  <li><a href="#" class="tablinks" onclick="openPlan(event, 'Week')">Week</a></li>
+
+  <li><a href="#" class="tablinks" onclick="openPlan(event, 'Dinner')">Dinner</a></li>
+  
+<li><a href="#" class="tablinks" onclick="openPlan(event, 'Week')">Week</a></li>
+
   <li><a href="#" class="tablinks" onclick="openPlan(event, 'Hacks')">Hacks</a></li>
 </ul>
 
+
+</div>
 <div id="Statistics" class="tabcontent">
-  <h3>Statistics</h3>
+
+  <h3 style="font-size:150%;">Statistics</h3>
+
   <p>
-    <img src="http://sustainontario.com/wp2011/wp-content/uploads/2011/01/Ellis_Jennifer_College-Student.jpg" alt="image can't be viewed" style="width:1200px;height:1000px;">
+
+    <img src="http://sustainontario.com/wp2011/wp-content/uploads/2011/01/Ellis_Jennifer_College-Student.jpg" alt="image can't be viewed" style="width:1250px;height:850px;">
   </p>
 </div>
 
+
+
 <div id="Breakfast" class="tabcontent">
-  <h3>Breakfast</h3>
-  <p>Paris is the capital of France.</p> 
+
+  <h3 style="font-size:150%;">Breakfast</h3>
+
+  <p>Paris is the capital of France.</p>
+
 </div>
+
+
 
 <div id="Lunch" class="tabcontent">
-  <h3>Lunch</h3>
+
+  <h3 style="font-size:150%;">Lunch</h3>
+
   <p>Tokyo is the capital of Japan.</p>
+
 </div>
+
+
 
 <div id="Dinner" class="tabcontent">
-  <h3>Dinner</h3>
+
+  <h3 style="font-size:150%;">Dinner</h3>
+
   <p>Tokyo is the capital of Japan.</p>
+
 </div>
+
+
 
 <div id="Week" class="tabcontent">
-  <h3>Week</h3>
+
+  <h3 style="font-size:150%;">Week</h3>
   <p>Tokyo is the capital of Japan.</p>
+
 </div>
 
+
+
 <div id="Hacks" class="tabcontent">
-  <h3>Hacks</h3>
-  <p>Tokyo is the capital of Japan.</p>
+
+  <h3 style="font-size:150%;">Hacks</h3>
+
+  <p style="font-size:150%;">Eggs:</p>
+  <p>
+
+    <img src="http://img.minq.com/slides/2/3/8/3/4/1/238341601/8d45fd0f2bc860e435b43a39fa2270f4635421de.jpeg" alt="image can't be viewed" style="width:300px;height:225px;">
+  </p>
+  <p style="font-size:115%;"> Seperate the egg yolk from the whites easily with a empty water bottle. </p>
+
 </div>
+
+
 
 <script>
 function openPlan(evt, mealName) {
+
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
+
     for (i = 0; i < tabcontent.length; i++) {
+
         tabcontent[i].style.display = "none";
+
     }
+
     tablinks = document.getElementsByClassName("tablinks");
+
     for (i = 0; i < tabcontent.length; i++) {
+
         tablinks[i].className = tablinks[i].className.replace(" active", "");
+
     }
+
     document.getElementById(mealName).style.display = "block";
+
     evt.currentTarget.className += " active";
+
 }
+
 </script>
-     
+
+
 </body>
+
 </html> 

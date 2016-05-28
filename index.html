@@ -1,4 +1,3 @@
-
 <html>
 
 <head>
@@ -7,77 +6,39 @@
    font-family: Amatic;
    src:url(http://fonts.gstatic.com/s/amaticsc/v6/DPPfSFKxRTXvae2bKDzp5FtXRa8TVwTICgirnJhmVJw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/amaticsc/v6/DPPfSFKxRTXvae2bKDzp5D8E0i7KZn-EPnyo3HZu7kw.woff);
 }
-
 div {
    font-family: Amatic;
 }
-
 ul.tab {
-
     list-style-type: none;
-
     margin: 0;
-
     padding: 0;
-
     overflow: hidden;
-
     border: 1px solid #ccc;
-
     background-color: #f1f1f1;
-
 }
-
-
-
 ul.tab li {float: left;}
-
 ul.tab li a {
-
     display: inline-block;
-
     color: black;
-
     text-align: center;
-
     padding: 14px 16px;
-
     text-decoration: none;
-
     transition: 0.3s;
-
     font-size: 17px;
-
 }
-
 ul.tab li a:hover {
-
     background-color: #ddd;
-
 }
-
-
 ul.tab li a:focus, .active {
-
     background-color: #ccc;
-
 }
-
-
-
 .tabcontent {
-
     display: none;
-
     padding: 6px 12px;
-
     border: 1px solid #ccc;
-
     border-top: none;
-
 }
-
-
 div#fixedheader {
 	position:fixed;
 	top:0px;
@@ -86,46 +47,28 @@ div#fixedheader {
 	color:#CCC;
 	background:#333;
 	padding:10px;
-
 </style>
 </head>
-
 <body>
-
-
 <div id="fixedheader"style="font-size:200%" onclick="openPlan(event, 'Statistics')"> Cooking For College</div>
 <div>
 <h1 style="font-size:250%";>  Cooking For College</h1>
-
 <ul class="tab">
-
-  <li><a href="#" class="tablinksactive" onclick="openPlan(event, 'Statistics')">Statistics</a></li>
-
+  <li><a href="#" class="tablinks" onclick="openPlan(event, 'Statistics')">Statistics</a></li>
   <li><a href="#" class="tablinks" onclick="openPlan(event, 'Breakfast')">Breakfast</a></li>
-
   <li><a href="#" class="tablinks" onclick="openPlan(event, 'Lunch')">Lunch</a></li>
-
   <li><a href="#" class="tablinks" onclick="openPlan(event, 'Dinner')">Dinner</a></li>
   
 <li><a href="#" class="tablinks" onclick="openPlan(event, 'Week')">Week</a></li>
-
   <li><a href="#" class="tablinks" onclick="openPlan(event, 'Hacks')">Hacks</a></li>
 </ul>
-
-
 </div>
-<div id="Statistics" class="tabcontentactive">
-
+<div id="Statistics" class="tabcontent">
   <h3 style="font-size:150%;">Statistics</h3>
-
   <p>
-
     <img src="http://sustainontario.com/wp2011/wp-content/uploads/2011/01/Ellis_Jennifer_College-Student.jpg" alt="image can't be viewed" style="width:1250px;height:850px;">
   </p>
 </div>
-
-
-
 <div id="Breakfast" class="tabcontent">
 	<style>"line-height:0px
 	</style>
@@ -160,7 +103,6 @@ You can mix this mug cake up the night before and cook it off in the microwave
 <br>You can add in seed or nuts also
 <p><b>Nutrition Information</b></p>
 Serving size: 1 serving Calories: 444 Fat: 15g Saturated fat: 3g Unsaturated fat: 1g Trans fat: 0g Carbohydrates: 67g Sugar: 32g Sodium: 126mg Fiber: 8g Protein: 13g Cholesterol: 1mg</p>
-
  <h6 style="font-size:250%;line-height:0px">Non-Vegetarian </h6>
  <p style="font-size:150%; line-height:10px;"> <b>Omurice(Japanese Omelette Rice)</b></p>
  <p style="line-height:20px">
@@ -211,14 +153,9 @@ Serving size: 1 serving Calories: 444 Fat: 15g Saturated fat: 3g Unsaturated fat
 	<br>Remember not to put too much rice on top the of the omlette because you still have to fold it up
 	</p>
 	<p style:"font-size:20px";>Source:http://www.justonecookbook.com/omurice-japanese-omelette-rice/</p>
-
   
  
 </div>
-
-
-
-
 <div id="Lunch" class="tabcontent">
  <h3 style="font-size:300%;line-height:10px;">LUNCH</h3>
  <h4 style="font-size:250%;line-height:10px">Vegetarian</h4>
@@ -244,7 +181,6 @@ Serving size: 1 serving Calories: 444 Fat: 15g Saturated fat: 3g Unsaturated fat
 <p><b>Notes</b>
 <br>Cooking time will vary greatly depending on your microwave and the width and depth of the mug. 
 <br>Always keep a close eye on your mug while in the microwave so it doesn’t over flow or over cook.</p>
-
  <h4 style="font-size:250%;line-height:10px">Non-Vegetarian</h4>
 <p><b style="font-size:150%;">Beef Udon</b>
 <br>Prep Time: 10 mins
@@ -287,9 +223,6 @@ Serving size: 1 serving Calories: 444 Fat: 15g Saturated fat: 3g Unsaturated fat
 <br>By this time, the noodle should be in the serving bowls. Pour the hot soup over the udon noodles in the bowls. Then serve the meat on top of the udon noodles.
 <br>Place the narutomaki (fish cake) and garnish with scallion and mitsuba. If you like it spicy, sprinkle Shichimi Togarashi (Japanese 7 spice). Enjoy!</p>
 </div>
-
-
-
 <div id="Dinner" class="tabcontent">
  
   <h3 style="font-size:300%;line-height:0px">Dinner</h3>
@@ -313,7 +246,6 @@ Brush one side of each bread slice with 1/2 tsp. olive oil.
 <br>Top each with one of the remaining bread slices, oiled side up.
 <br>Heat a large fry pan or griddle over medium heat until hot. Place 2 of the sandwiches in the pan, reduce the heat to medium-low and cook until the undersides are golden brown, 3 to 4 minutes. Flip the sandwiches and brown the other side, 3 to 4 minutes more. Repeat with the remaining sandwiches.
 <br>Transfer the sandwiches to a cutting board and cut in half diagonally. Serve immediately.
-
   <h4 style="font-size:250%;line-height:0px">Vegetarian</h4>
   <p> 
     <h5 style="font-size:150%; line-height:10px;">
@@ -340,73 +272,40 @@ In a Dutch oven or large stock pot, heat oil over medium heat. Add onions, peppe
 <br>Mix in beans, tomatoes, and corn. Bring mixture to a boil, then lower heat and simmer for 30 minutes, stirring occasionally. Taste and season with additional salt and pepper, if necessary. Served with desired toppings. Leftovers will keep in the fridge for about a week or in the freezer for a couple months.
 <p><b>Notes</b></p>
  Feeling adventurous? You can up the amount of cayenne pepper or mix in some fresh diced jalapenos. Top your chili with any combination of sour cream, Greek yogurt, scallions, fresh cilantro, or shredded cheese. You can also bulk it up with some cooked quinoa or brown rice.
-
-
-
 </div>
-
-
-
 <div id="Week" class="tabcontent">
-
   <h3 style="font-size:300%;">Week</h3>
   <img src=https://s-media-cache-ak0.pinimg.com/736x/57/f7/7f/57f77f7abbf296e6bd6bff3d0c67cfef.jpg alt="image can't be viewed" style="width:500px;height:700px;>
   <p style="font-size:100%;">
   <br> <b>Print out and follow this meal plan!</b>
   <br>source= https://tolooklikeabeauty.wordpress.com/2013/12/31/cheap-college-meal-plannercreator/
  </p>
-
 </div>
-
-
-
 <div id="Hacks" class="tabcontent">
-
   <h3 style="font-size:150%;">Hacks</h3>
-
   <p style="font-size:150%;">Eggs:</p>
   <p>
-
     <img src="http://img.minq.com/slides/2/3/8/3/4/1/238341601/8d45fd0f2bc860e435b43a39fa2270f4635421de.jpeg" alt="image can't be viewed" style="width:300px;height:225px;">
   </p>
   <p style="font-size:115%;"> Seperate the egg yolk from the whites easily with a empty water bottle. </p>
   
   <iframe width="560" height="315" src="https://www.youtube.com/embed/-bmbCETGslE" frameborder="0" allowfullscreen></iframe>
   <p> Source: Buzzfeed </p>
-
 </div>
-
-
-
 <script>
 function openPlan(evt, mealName) {
-
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
-
     for (i = 0; i < tabcontent.length; i++) {
-
         tabcontent[i].style.display = "none";
-
     }
-
     tablinks = document.getElementsByClassName("tablinks");
-
     for (i = 0; i < tabcontent.length; i++) {
-
         tablinks[i].className = tablinks[i].className.replace(" active", "");
-
     }
-
     document.getElementById(mealName).style.display = "block";
-
     evt.currentTarget.className += " active";
-
 }
-
 </script>
-
-
 </body>
-
 </html> 
